@@ -19,7 +19,7 @@ function App() {
     formData.append('image', file);
 
     try {
-      const response = await axios.post('http://localhost:5000/compress', formData, {
+      const response = await axios.post('https://image-compressor-fkpu.onrender.com', formData, {
         responseType: 'blob',
       });
 
